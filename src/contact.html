@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me - Avrey Low</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Raleway:wght@100&family=Reem+Kufi&display=swap" rel="stylesheet">
+  <script src="javascripts/main.js" defer></script>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-light fs-3" id="offcanvasNavbarLabel">Avrey Low</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 fs-5">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link fw-bold" href="hiking.html">Hiking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="piano.html">Piano</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="cooking.html">Cooking</a>
+              </li>
+              <li class="nav-item flex-grow-1">
+                <a class="nav-link fw-bold" href="photography.html">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="px-4 py-5 my-5 text-center intro">   
+      <h1 class="display-5 photography mb-5 pb-5 fade-in-bottom">Contact Me</h1>
+    </div>
+  </div>
+
+  <div class="container contact">
+    <div class="card">
+      <form class="card-body p-4 p-md-5">
+        <div class="mb-4 mb-md-5">
+          <label for="fname" class="form-label mb-3 mb-md-4">First Name *</label>
+          <input type="text" class="form-control" id="fname" required name="First Name">
+        </div>
+        <div class="mb-4 mb-md-5">
+          <label for="lname" class="form-label mb-3 mb-md-4">Last Name *</label>
+          <input type="text" class="form-control" id="lname" required name="Last Name">
+        </div>
+        <div class="mb-4 mb-md-5">
+          <label for="email" class="form-label mb-3 mb-md-4">Email Address *</label>
+          <input type="email" class="form-control" id="email" required name="Email">
+        </div>
+        <div class="mb-4 mb-md-5">
+          <label for="message" class="form-label mb-3 mb-md-4">Message *</label>
+          <textarea class="form-control" id="message" rows="6" name="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer class="container-fluid">
+    <div>
+      <p class="fw-bold fs-4">&copy; Avrey Low 2021</p>
+      <div class="symbols">
+        <a href="https://www.facebook.com/avrey.low" target="_blank"><i class="fab fa-facebook display-6"></i></a>
+        <a href="https://www.instagram.com/20alow64/" target="_blank"><i class="fab fa-instagram display-6"></i></a>
+        <a href="https://pin.it/1kn3bkN" target="_blank"><i class="fab fa-pinterest display-6"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,1 +1,288 @@
 // Your styles go here
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+$primary: #B7245C;
+$secondary: #213823;
+$success: #929292;
+$info: #E5E5E5;
+
+$grid-breakpoints: (
+  sm: 0,
+  md: 768px,
+  lg: 992px,
+);
+
+$accordion-border-radius: 12px;
+
+$input-bg:rgba(183, 36, 92, 0.1);
+
+$input-focus-bg: rgba(183, 36, 92, 0.05);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'reem kufi';
+}
+
+p, .card-body, .card-body > a > button, .accordion-button, .accordion-body, .btn {
+    word-spacing: 2px;
+}
+
+.header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $secondary;
+    background-image: url(/images/leaves.jpg);
+    font-family: 'raleway', sans-serif;
+}
+
+.intro {
+    & .photography {
+        font-size: 380%;
+    }    
+    & > h1 {
+        font-family: 'euphoria script', 'curlz mt', 'bradley hand itc', cursive;
+        color: white;
+        font-size: 100px;
+        text-shadow: 5px 7px 4px #000000;
+    }
+
+    & > div > p {
+        color: $info;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-bottom {
+	animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-delay {
+    animation: fade-in-bottom 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.navbar {
+    background-color: $secondary;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    height: 60px;
+}
+
+.offcanvas-start {
+    background-color: $secondary;
+}
+
+.main {
+    width: 90%;
+    
+    & > div > p {
+        margin-bottom: 60px;
+    }
+}
+
+.poppy {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 18px;
+    border: 1px solid black;
+    filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.25));
+}
+
+.food {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 18px;
+}
+
+.recipe {
+    border-radius: 18px;
+    width: 100%;
+}
+
+footer {
+    background-color: $secondary;
+    color: $info;
+    padding: 50px;
+    & > div {
+        & > p {
+            font-family: 'raleway', sans-serif;
+            text-align: center;
+        }
+        & > .symbols {
+            text-align: center;
+            margin-top: 30px;
+            & > a {
+                color: $info;
+                &:hover {
+                    color: darken($info, 20%);
+                }
+                &:nth-child(2), &:nth-child(3) {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+.hiking, .piano, .cooking, .contact {
+    width: 90%;
+    margin-bottom: 70px;
+    & > div:nth-child(2) {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+.piano {
+    & > .main {
+        width: 100%;
+        &:nth-child(3) {
+            margin-top: 50px;
+        }
+    }
+    & > div:nth-child(2) {
+        margin-top: 50px;
+    }
+}
+
+.accordion {
+    margin-top: 60px;
+
+}
+
+.card {
+    border-radius: 12px;
+    & > img {
+        border-radius: 12px 12px 0 0;
+    }
+    & > .card-body > a > button {
+        border-radius: 8px;
+    }
+}
+
+.cooking {
+    & button {
+        border-radius: 8px;
+    }
+
+    & .card.card-body {
+        margin-bottom: 40px;
+    }
+}
+
+.photop {
+    width: 90%;
+}
+
+.contact {
+    & button, input, textarea {
+        border-radius: 8px;
+    }
+}
+
+
+//Media Breakpoint Stuff
+
+@include media-breakpoint-up(md) {
+    
+    .intro {
+        & .photography {
+            font-size: 100px;
+        }
+    }
+    
+    footer {
+        clear: both;
+        & > div {
+            margin-bottom: 40px;
+            & > p {
+                float: left;
+                margin-left: 100px;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+    
+            & > .symbols {
+                float: right;
+                margin-top: 0;
+                & > a:not(first-child) {
+                    margin-left: 15px;
+                }
+    
+                & > a:last-child {
+                    margin-right: 100px;
+                }
+            }
+        }
+    }    
+    
+    .poppy {
+        width: 40%;
+        float: left;
+        margin-top: 0;
+        margin-right: 60px;
+        margin-bottom: 40px;
+    }
+
+    .piano {
+        & > .main {
+            margin-top: 60px;
+        }
+        & .poppy {
+            margin-right: 0;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        & .upright {
+            padding-right: 40px;
+        }
+        & .grand {
+            padding-left: 40px;
+        }
+    }
+
+    .clear {
+        clear: both;
+         & > .poppy {
+             float: right;
+             margin-right: 0;
+         }
+
+         & > p {
+             float: left;
+         }
+    }
+
+    .main > p {
+        width: 50%;
+        float: left;
+    }
+
+    .recipe {
+        width: 33%;
+    }
+    
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar {
+        background: none;
+        box-shadow: none;
+    }
+}

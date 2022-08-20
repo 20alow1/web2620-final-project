@@ -3,18 +3,77 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project Starter</title>
+  <title>Home - Avrey Low</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- 
-    Don't add stylesheets/main.css or javascripts/main.js manually. 
-    They will be added automatically by Webpack.
-  -->
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Raleway:wght@100&family=Reem+Kufi&display=swap" rel="stylesheet">
+  <script src="javascripts/main.js" defer></script>
 </head>
 
 <body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-light fs-3" id="offcanvasNavbarLabel">Avrey Low</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 fs-5">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link fw-bold" href="hiking.html">Hiking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="piano.html">Piano</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="cooking.html">Cooking</a>
+              </li>
+              <li class="nav-item flex-grow-1">
+                <a class="nav-link fw-bold" href="photography.html">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="px-4 py-5 my-5 text-center intro">   
+      <h1 class="display-5 fade-in-bottom">Hello!</h1>
+      <div class="col-lg-6 mx-auto my-5">
+        <p class="lead mb-4 fw-bold fade-in-delay">My name is Avrey...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main">
+    <div>
+      <img class="poppy" src="images/Poppy3.jpg">
+      <p>...and it's so nice to meet you! This website tells you a little about me and some of the things I like to do in my spare time. As of Fall 2021, I am a student at Weber State University, and I am majoring in Web UX (this website is great practice!). I work for Kaysville City as an assistant for the IT department, so I get to do computer stuff both at school and at work. I am the oldest child at home, with both a younger sister and a younger brother. I was born in Logan, Utah, and lived there until I was about 10 years old. Then we moved to Layton, Utah, and I've been in this wonderful city ever since.</p>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+    <div>
+      <p class="fw-bold fs-4">&copy; Avrey Low 2021</p>
+      <div class="symbols">
+        <a href="https://www.facebook.com/avrey.low" target="_blank"><i class="fab fa-facebook display-6"></i></a>
+        <a href="https://www.instagram.com/20alow64/" target="_blank"><i class="fab fa-instagram display-6"></i></a>
+        <a href="https://pin.it/1kn3bkN" target="_blank"><i class="fab fa-pinterest display-6"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
